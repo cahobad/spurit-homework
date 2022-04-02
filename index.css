@@ -1,3 +1,4 @@
+/* Fonts start */
 @font-face {
   font-family: 'Avenir Next Rounded Std';
   src: url('fonts/AvenirNextRoundedStd-Italic.eot');
@@ -105,9 +106,39 @@
   font-weight: bold;
   font-style: normal;
 }
+/* Fonts end */
+
+/* Variables start */
+:root {
+  --color-black: #1a1f29;
+  --color-page-background: #fff;
+  --color-disabled-1: #cccccc;
+  --color-disabled-2: #929499;
+  --color-primary: #171c8f;
+}
+/* Variables end */
+
+/* Base start */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
 
 body {
+  line-height: 1.1;
+  color: var(--color-black);
+  text-align: left;
+  background-color: var(--color-page-background);
+
   font-family: 'Avenir Next Rounded Std', sans-serif;
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
+/* Base end */
