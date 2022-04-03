@@ -272,3 +272,18 @@ body {
 }
 
 /* header end */
+
+/* footer start */
+
+.footer {
+  border-top: 1px solid var(--color-disabled-1);
+}
+
+.footer__block {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 88px;
+}
+
+/* footer end */
