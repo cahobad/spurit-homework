@@ -54,7 +54,181 @@
         </nav>
       </div>
     </header>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+
+    <main id="main" class="main">
+      <article class="article">
+        <header class="article__header">
+          <nav>
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Women</a></li>
+              <li>White unisex t-shirt</li>
+            </ol>
+          </nav>
+        </header>
+
+        <img
+          src="images/white-unisex-t-shirt.jpg"
+          alt="girl in a white t-shirt."
+        />
+
+        <h1>White unisex t-shirt</h1>
+        <p>CHF 40</p>
+        <p>Tax included</p>
+
+        <!-- Form start -->
+        <form>
+          <fieldset>
+            <legend>Size</legend>
+            <div>
+              <input type="radio" name="size" id="xs" value="xs" />
+              <label for="xs">xs</label>
+
+              <input type="radio" name="size" id="s" value="s" checked />
+              <label for="s">s</label>
+
+              <input type="radio" name="size" id="m" value="m" />
+              <label for="m">m</label>
+
+              <input type="radio" name="size" id="l" value="l" />
+              <label for="l">l</label>
+
+              <input type="radio" name="size" id="xl" value="xl" />
+              <label for="xl">xl</label>
+
+              <input type="radio" name="size" id="2xl" value="2xl" />
+              <label for="2xl">2xl</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Color - White</legend>
+            <div>
+              <input
+                type="radio"
+                name="color"
+                id="white"
+                value="white"
+                checked
+              />
+              <label for="white">white</label>
+
+              <input type="radio" name="color" id="black" value="black" />
+              <label for="black">black</label>
+
+              <input type="radio" name="color" id="gray" value="gray" />
+              <label for="gray">gray</label>
+
+              <input type="radio" name="color" id="purple" value="purple" />
+              <label for="purple">purple latte</label>
+
+              <input type="radio" name="color" id="red" value="red" disabled />
+              <label for="red">red</label>
+
+              <input
+                type="radio"
+                name="color"
+                id="orange"
+                value="orange"
+                disabled
+              />
+              <label for="orange">orange</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Quantity</legend>
+            <button type="button">-</button>
+            <input type="number" name="quantity" min="1" value="1" />
+            <button type="button">+</button>
+          </fieldset>
+
+          <button type="button">add to cart</button>
+          <button type="submit">buy it now</button>
+        </form>
+        <!-- Form end -->
+
+        <p>
+          A unisex basic garment with a loose fit. Light and comfortable to your
+          skin.
+        </p>
+        <p>Certification of cotton - GOTS</p>
+
+        <!-- Accordion start -->
+        <div>
+          <section>
+            <h2>
+              <button>Sizing & Fit</button>
+            </h2>
+            <div>
+              <p>Olga is 175cm, she is wearing a size S.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>
+              <button>Composition & Care</button>
+            </h2>
+            <div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>
+              <button>Delivery & Returns</button>
+            </h2>
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </section>
+        </div>
+        <!-- Accordion end -->
+
+        <footer class="article__footer">
+          <section>
+            <h3>You may also like</h3>
+            <ul>
+              <li>
+                <a href="/">
+                  <img src="images/DSC_2518.jpg" alt="" />
+                </a>
+                <h4>Product name</h4>
+                <div><span></span><span></span><span></span><span></span></div>
+                <p>CHF 40</p>
+              </li>
+
+              <li>
+                <a href="/">
+                  <img src="images/DSC_5389.jpg" alt="" />
+                </a>
+                <h4>Product name</h4>
+                <div><span></span><span></span><span></span><span></span></div>
+                <p>CHF 40</p>
+              </li>
+
+              <li>
+                <a href="/">
+                  <img src="images/DSC_2330.jpg" alt="" />
+                </a>
+                <h4>Product name</h4>
+                <div><span></span><span></span><span></span><span></span></div>
+                <p>CHF 40</p>
+              </li>
+
+              <li>
+                <a href="/">
+                  <img src="images/image6.jpg" alt="" />
+                </a>
+                <h4>Product name</h4>
+                <div><span></span><span></span><span></span><span></span></div>
+                <p>CHF 40</p>
+              </li>
+            </ul>
+          </section>
+        </footer>
+      </article>
+    </main>
 
     <footer class="footer">
       <div class="footer__block">
