@@ -11,8 +11,8 @@
     <header class="header">
       <a class="skiplink" href="#main">Go to content</a>
       <div class="header__block">
-        <nav class="header__main-nav">
-          <ul class="main-nav__list">
+        <nav class="header__main-nav" aria-label="main menu">
+          <ul class="main-nav__list" role="list">
             <li class="main-nav__list-item">
               <a class="main-nav__link main-nav__link--active" href="/"
                 >Women
@@ -40,8 +40,8 @@
           </a>
         </div>
 
-        <nav class="header__user-nav">
-          <ul class="user-nav__list">
+        <nav class="header__user-nav" aria-label="user menu">
+          <ul class="user-nav__list" role="list">
             <li class="user-nav__list-item">
               <a class="user-nav__link" href="/">Account</a>
             </li>
@@ -59,7 +59,7 @@
     <main id="main" class="main">
       <article class="article">
         <header class="article__header">
-          <nav>
+          <nav aria-label="breadcrumbs">
             <ol>
               <li><a href="/">Home</a></li>
               <li><a href="/">Women</a></li>
@@ -159,7 +159,7 @@
         <div>
           <section>
             <h2>
-              <button>Sizing & Fit</button>
+              <button type="button">Sizing & Fit</button>
             </h2>
             <div>
               <p>Olga is 175cm, she is wearing a size S.</p>
@@ -168,7 +168,7 @@
 
           <section>
             <h2>
-              <button>Composition & Care</button>
+              <button type="button">Composition & Care</button>
             </h2>
             <div>
               <p>Lorem ipsum dolor sit amet.</p>
@@ -177,7 +177,7 @@
 
           <section>
             <h2>
-              <button>Delivery & Returns</button>
+              <button type="button">Delivery & Returns</button>
             </h2>
             <div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -189,7 +189,7 @@
         <footer class="article__footer">
           <section>
             <h3>You may also like</h3>
-            <ul>
+            <ul role="list">
               <li>
                 <a href="/">
                   <img src="images/DSC_2518.jpg" alt="" />
@@ -258,7 +258,7 @@
 
         <div class="footer-block">
           <h3 class="footer-block__heading">Company</h3>
-          <ul class="footer-block__links-list">
+          <ul class="footer-block__links-list" role="list">
             <li class="footer-block__links-list-item">
               <a class="footer-block__link" href="/">Women</a>
             </li>
@@ -279,7 +279,7 @@
 
         <div class="footer-block">
           <h3 class="footer-block__heading">Useful Links</h3>
-          <ul class="footer-block__links-list">
+          <ul class="footer-block__links-list" role="list">
             <li class="footer-block__links-list-item">
               <a class="footer-block__link" href="/">Privacy Policy </a>
             </li>
