@@ -116,6 +116,13 @@
   --color-disabled-2: #929499;
   --color-primary: #171c8f;
   --color-tertiary-1: #5e626b;
+
+  --mobile-size: 241px;
+  --tablet-size: 480px;
+  --laptop-size: 768px;
+  --desktop-small-size: 1024px;
+  --desktop-medium-size: 1200px;
+  --desktop-large-size: 1440px;
 }
 /* Variables end */
 
@@ -153,7 +160,7 @@ body {
 
 .header__block {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--desktop-large-size);
   margin: 0 auto;
   padding: 0 56px;
 
@@ -282,7 +289,7 @@ body {
 
 .footer__block {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--desktop-large-size);
   margin: 0 auto;
   padding: 81px 88px;
 }
