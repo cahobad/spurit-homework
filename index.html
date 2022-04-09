@@ -71,87 +71,227 @@
     </aside>
 
     <main id="main" class="main">
-      <article class="article">
-        <img
-          src="images/white-unisex-t-shirt.jpg"
-          alt="girl in a white t-shirt."
-        />
+      <article class="product">
+        <div class="product__main-block">
+          <div class="product__gallery">
+            <img
+              class="product__image"
+              src="images/white-unisex-t-shirt.jpg"
+              alt="girl in a white t-shirt."
+            />
+          </div>
 
-        <h1>White unisex t-shirt</h1>
-        <p>CHF 40</p>
-        <p>Tax included</p>
+          <div class="product__info-block">
+            <h1 class="product__heading">White unisex t-shirt</h1>
+            <p class="product__price">CHF 40</p>
+            <p class="product__tax">Tax included</p>
 
-        <!-- Form start -->
-        <form>
-          <fieldset>
-            <legend>Size</legend>
-            <div>
-              <input type="radio" name="size" id="xs" value="xs" />
-              <label for="xs">xs</label>
+            <!-- Form start -->
+            <form class="product__form product-form">
+              <fieldset class="product-form__fieldset">
+                <legend class="product-form__legend">Size</legend>
+                <div class="product-form__radio-block">
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="size"
+                      id="xs"
+                      value="xs"
+                    />
+                    <label class="radio-block__label" for="xs">xs</label>
+                  </span>
 
-              <input type="radio" name="size" id="s" value="s" checked />
-              <label for="s">s</label>
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="size"
+                      id="s"
+                      value="s"
+                      checked
+                    />
+                    <label class="radio-block__label" for="s">s</label>
+                  </span>
 
-              <input type="radio" name="size" id="m" value="m" />
-              <label for="m">m</label>
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="size"
+                      id="m"
+                      value="m"
+                    />
+                    <label class="radio-block__label" for="m">m</label>
+                  </span>
 
-              <input type="radio" name="size" id="l" value="l" />
-              <label for="l">l</label>
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="size"
+                      id="l"
+                      value="l"
+                    />
+                    <label class="radio-block__label" for="l">l</label>
+                  </span>
 
-              <input type="radio" name="size" id="xl" value="xl" />
-              <label for="xl">xl</label>
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="size"
+                      id="xl"
+                      value="xl"
+                    />
+                    <label class="radio-block__label" for="xl">xl</label>
+                  </span>
 
-              <input type="radio" name="size" id="2xl" value="2xl" />
-              <label for="2xl">2xl</label>
-            </div>
-          </fieldset>
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="size"
+                      id="2xl"
+                      value="2xl"
+                      disabled
+                    />
+                    <label class="radio-block__label" for="2xl">2xl</label>
+                  </span>
+                </div>
+              </fieldset>
 
-          <fieldset>
-            <legend>Color - White</legend>
-            <div>
-              <input
-                type="radio"
-                name="color"
-                id="white"
-                value="white"
-                checked
-              />
-              <label for="white">white</label>
+              <fieldset class="product-form__fieldset">
+                <legend class="product-form__legend">Color - White</legend>
+                <div class="product-form__radio-block">
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="color"
+                      id="white"
+                      value="white"
+                      checked
+                    />
+                    <label
+                      class="radio-block__label radio-block__label--color"
+                      for="white"
+                      ><span
+                        class="label__color-block label__color-block--white"
+                      ></span>
+                      <span class="label__title">white</span></label
+                    >
+                  </span>
 
-              <input type="radio" name="color" id="black" value="black" />
-              <label for="black">black</label>
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="color"
+                      id="black"
+                      value="black"
+                    />
+                    <label
+                      class="radio-block__label radio-block__label--color"
+                      for="black"
+                      ><span
+                        class="label__color-block label__color-block--black"
+                      ></span>
+                      <span class="label__title">black</span></label
+                    >
+                  </span>
 
-              <input type="radio" name="color" id="gray" value="gray" />
-              <label for="gray">gray</label>
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="color"
+                      id="dark-gray"
+                      value="dark-gray"
+                    />
+                    <label
+                      class="radio-block__label radio-block__label--color"
+                      for="dark-gray"
+                      ><span
+                        class="label__color-block label__color-block--dark-gray"
+                      ></span>
+                      <span class="label__title">dark gray</span></label
+                    >
+                  </span>
 
-              <input type="radio" name="color" id="purple" value="purple" />
-              <label for="purple">purple latte</label>
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="color"
+                      id="purple-latte"
+                      value="purple-latte"
+                    />
+                    <label
+                      class="radio-block__label radio-block__label--color"
+                      for="purple-latte"
+                    >
+                      <span
+                        class="label__color-block label__color-block--purple-latte"
+                      ></span>
+                      <span class="label__title">purple latte</span>
+                    </label>
+                  </span>
 
-              <input type="radio" name="color" id="red" value="red" disabled />
-              <label for="red">red</label>
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="color"
+                      id="mauvelous"
+                      value="mauvelous"
+                      disabled
+                    />
+                    <label
+                      class="radio-block__label radio-block__label--color"
+                      for="mauvelous"
+                      ><span
+                        class="label__color-block label__color-block--mauvelous"
+                      ></span>
+                      <span class="label__title">mauvelous</span></label
+                    >
+                  </span>
 
-              <input
-                type="radio"
-                name="color"
-                id="orange"
-                value="orange"
-                disabled
-              />
-              <label for="orange">orange</label>
-            </div>
-          </fieldset>
+                  <span class="radio-block__container">
+                    <input
+                      class="radio-block__input"
+                      type="radio"
+                      name="color"
+                      id="apricot"
+                      value="apricot"
+                      disabled
+                    />
+                    <label
+                      class="radio-block__label radio-block__label--color"
+                      for="apricot"
+                    >
+                      <span
+                        class="label__color-block label__color-block--apricot"
+                      ></span>
+                      <span class="label__title">apricot</span>
+                    </label>
+                  </span>
+                </div>
+              </fieldset>
 
-          <fieldset>
-            <legend>Quantity</legend>
-            <button type="button">-</button>
-            <input type="number" name="quantity" min="1" value="1" />
-            <button type="button">+</button>
-          </fieldset>
+              <fieldset>
+                <legend>Quantity</legend>
+                <button type="button">-</button>
+                <input type="number" name="quantity" min="1" value="1" />
+                <button type="button">+</button>
+              </fieldset>
 
-          <button type="button">add to cart</button>
-          <button type="submit">buy it now</button>
-        </form>
-        <!-- Form end -->
+              <button type="button">add to cart</button>
+              <button type="submit">buy it now</button>
+            </form>
+            <!-- Form end -->
+          </div>
+        </div>
 
         <p>
           A unisex basic garment with a loose fit. Light and comfortable to your
