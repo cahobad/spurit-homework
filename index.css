@@ -296,8 +296,6 @@ body {
 }
 
 .footer-block {
-  border: 1px solid red;
-  color: var(--color-tertiary-1);
 }
 
 @media (min-width: 1024px) {
@@ -352,3 +350,20 @@ body {
   padding: 2.5px;
 }
 /* footer end */
+
+/* other start */
+
+.skiplink {
+  position: absolute;
+  top: -200px;
+  left: 2px;
+  transition: top 0.2s;
+  color: inherit;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+.skiplink:focus {
+  top: 20px;
+}
+
+/* other end */
