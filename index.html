@@ -162,7 +162,9 @@
               </fieldset>
 
               <fieldset class="product-form__fieldset">
-                <legend class="product-form__legend">Color - White</legend>
+                <legend class="product-form__legend">
+                  Color <span aria-hidden="true">- White</span>
+                </legend>
                 <div class="product-form__radio-block">
                   <span class="radio-block__container">
                     <input
@@ -279,15 +281,45 @@
                 </div>
               </fieldset>
 
-              <fieldset>
-                <legend>Quantity</legend>
-                <button type="button">-</button>
-                <input type="number" name="quantity" min="1" value="1" />
-                <button type="button">+</button>
+              <fieldset class="product-form__fieldset">
+                <legend class="product-form__legend product-form__legend--ls">
+                  Quantity
+                </legend>
+
+                <div class="product-form__number-input-block">
+                  <button
+                    class="product-form__button product-form__button--small"
+                    type="button"
+                  >
+                    −
+                  </button>
+                  <input
+                    class="product-form__number-input"
+                    type="number"
+                    name="quantity"
+                    min="1"
+                    value="1"
+                  />
+                  <button
+                    class="product-form__button product-form__button--small"
+                    type="button"
+                  >
+                    +
+                  </button>
+                </div>
               </fieldset>
 
-              <button type="button">add to cart</button>
-              <button type="submit">buy it now</button>
+              <div class="product-form__order-button-block">
+                <button class="product-form__button" type="button">
+                  add to cart
+                </button>
+                <button
+                  class="product-form__button product-form__button--submit"
+                  type="submit"
+                >
+                  buy it now
+                </button>
+              </div>
             </form>
             <!-- Form end -->
           </div>
