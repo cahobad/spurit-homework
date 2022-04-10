@@ -726,6 +726,7 @@ body {
 @media (min-width: 1024px) {
   .article__footer {
     margin-top: 100px;
+    margin-top: 98px;
     margin-bottom: 90px;
   }
 }
@@ -875,7 +876,7 @@ body {
   width: 100%;
   max-width: var(--desktop-large-size);
   margin: 0 auto;
-  padding: 81px 88px;
+  padding: 16px;
 }
 
 @media (min-width: 1024px) {
@@ -883,20 +884,15 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-}
+    gap: 156px;
 
-.footer-block {
-}
-
-@media (min-width: 1024px) {
-  .footer-block {
-    margin-right: 156px;
+    padding: 81px 88px 33px 88px;
   }
 }
 
 .footer-block__heading {
-  font-family: 'Avenir Next Rounded Std';
+  margin-top: 20px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -906,40 +902,82 @@ body {
   text-transform: uppercase;
 
   color: var(--color-black);
-  margin-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+  .footer-block__heading {
+    margin-top: 0;
+  }
 }
 
 .footer-block__text {
-  margin: 16px 0;
+  margin-top: 10px;
   letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+@media (min-width: 1024px) {
+  .footer-block__text {
+    margin-top: 24px;
+  }
 }
 
 .footer-block__links-list {
+  margin-top: 10px;
   list-style: none;
 }
 
+@media (min-width: 1024px) {
+  .footer-block__links-list {
+    margin-top: 24px;
+  }
+}
+
 .footer-block__links-list-item {
-  margin: 16px 0;
 }
 
 .footer-block__link {
   color: var(--color-tertiary-1);
   text-decoration: none;
 
-  font-family: 'Avenir Next Rounded Std';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 32px;
 
   letter-spacing: 1px;
 }
 
-.footer-block__logo-icon {
+.footer-block__social-icon {
   width: 24px;
   height: 24px;
   margin-right: 10px;
+  margin-top: 16px;
   padding: 2.5px;
 }
+
+.footer__copyright-block {
+  width: 100%;
+  max-width: var(--desktop-large-size);
+  margin: 0 auto;
+  padding: 60px 88px 33px 88px;
+}
+
+.footer__copyright {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-tertiary-1);
+}
+
+@media (min-width: 1024px) {
+  .footer__copyright {
+    text-align: left;
+  }
+}
+
 /* footer end */
 
 /* other start */
