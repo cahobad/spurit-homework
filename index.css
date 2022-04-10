@@ -1,34 +1,6 @@
 /* Fonts start */
 @font-face {
   font-family: 'Avenir Next Rounded Std';
-  src: url('fonts/AvenirNextRoundedStd-Italic.eot');
-  src: local('Avenir Next Rounded Std Italic'),
-    local('AvenirNextRoundedStd-Italic'),
-    url('fonts/AvenirNextRoundedStd-Italic.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/AvenirNextRoundedStd-Italic.woff2') format('woff2'),
-    url('fonts/AvenirNextRoundedStd-Italic.woff') format('woff'),
-    url('fonts/AvenirNextRoundedStd-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Avenir Next Rounded Std';
-  src: url('fonts/AvenirNextRoundedStd-BoldIt.eot');
-  src: local('Avenir Next Rounded Std Bold Italic'),
-    local('AvenirNextRoundedStd-BoldIt'),
-    url('fonts/AvenirNextRoundedStd-BoldIt.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/AvenirNextRoundedStd-BoldIt.woff2') format('woff2'),
-    url('fonts/AvenirNextRoundedStd-BoldIt.woff') format('woff'),
-    url('fonts/AvenirNextRoundedStd-BoldIt.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Avenir Next Rounded Std';
   src: url('fonts/AvenirNextRoundedStd-Reg.eot');
   src: local('Avenir Next Rounded Std Regular'),
     local('AvenirNextRoundedStd-Reg'),
@@ -37,60 +9,6 @@
     url('fonts/AvenirNextRoundedStd-Reg.woff') format('woff'),
     url('fonts/AvenirNextRoundedStd-Reg.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Avenir Next Rounded Std';
-  src: url('fonts/AvenirNextRoundedStd-Med.eot');
-  src: local('Avenir Next Rounded Std Medium'),
-    local('AvenirNextRoundedStd-Med'),
-    url('fonts/AvenirNextRoundedStd-Med.eot?#iefix') format('embedded-opentype'),
-    url('fonts/AvenirNextRoundedStd-Med.woff2') format('woff2'),
-    url('fonts/AvenirNextRoundedStd-Med.woff') format('woff'),
-    url('fonts/AvenirNextRoundedStd-Med.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Avenir Next Rounded Std';
-  src: url('fonts/AvenirNextRoundedStd-DemiIt.eot');
-  src: local('Avenir Next Rounded Std Demi Italic'),
-    local('AvenirNextRoundedStd-DemiIt'),
-    url('fonts/AvenirNextRoundedStd-DemiIt.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/AvenirNextRoundedStd-DemiIt.woff2') format('woff2'),
-    url('fonts/AvenirNextRoundedStd-DemiIt.woff') format('woff'),
-    url('fonts/AvenirNextRoundedStd-DemiIt.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Avenir Next Rounded Std';
-  src: url('fonts/AvenirNextRoundedStd-MedIt.eot');
-  src: local('Avenir Next Rounded Std Medium Italic'),
-    local('AvenirNextRoundedStd-MedIt'),
-    url('fonts/AvenirNextRoundedStd-MedIt.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/AvenirNextRoundedStd-MedIt.woff2') format('woff2'),
-    url('fonts/AvenirNextRoundedStd-MedIt.woff') format('woff'),
-    url('fonts/AvenirNextRoundedStd-MedIt.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Avenir Next Rounded Std';
-  src: url('fonts/AvenirNextRoundedStd-Demi.eot');
-  src: local('Avenir Next Rounded Std Demi'), local('AvenirNextRoundedStd-Demi'),
-    url('fonts/AvenirNextRoundedStd-Demi.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/AvenirNextRoundedStd-Demi.woff2') format('woff2'),
-    url('fonts/AvenirNextRoundedStd-Demi.woff') format('woff'),
-    url('fonts/AvenirNextRoundedStd-Demi.ttf') format('truetype');
-  font-weight: bold;
   font-style: normal;
 }
 
@@ -162,15 +80,22 @@ body {
   width: 100%;
   max-width: var(--desktop-large-size);
   margin: 0 auto;
-  padding: 0 56px;
+  padding: 0 16px;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 1024px) {
   .header__block {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__block {
+    padding: 0 56px;
   }
 }
 
@@ -180,25 +105,38 @@ body {
 
 .main-nav__list {
   list-style: none;
-
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
   align-items: center;
 }
+
+@media (min-width: 241px) {
+  .main-nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 @media (min-width: 1024px) {
   .main-nav__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
 .main-nav__list-item {
-  padding: 34px 8px;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+@media (min-width: 1024px) {
+  .main-nav__list-item {
+    padding: 34px 8px;
+    margin-right: 20px;
+  }
 }
 
 .main-nav__link {
   text-decoration: none;
-  font-family: 'Avenir Next Rounded Std';
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -247,29 +185,40 @@ body {
   list-style: none;
 
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
+  flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 241px) {
+  .user-nav__list {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1024px) {
   .user-nav__list {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
   }
 }
 
 .user-nav__list-item {
+  margin-right: 10px;
+  padding-top: 20px;
 }
 @media (min-width: 1024px) {
   .user-nav__list-item {
     padding: 34px 8px;
     margin-left: 20px;
+    margin-right: 0;
   }
 }
 
 .user-nav__link {
   text-decoration: none;
-  font-family: 'Avenir Next Rounded Std';
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -335,10 +284,6 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-}
-
-.breadcrumbs__link::after:focus {
-  outline: none;
 }
 
 /* aside end */
