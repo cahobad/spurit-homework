@@ -353,10 +353,10 @@ body {
 }
 
 .product {
-  padding: 0 136px 0 104px;
 }
 
 .product__main-block {
+  padding: 0 136px 0 104px;
 }
 
 @media (min-width: 1024px) {
@@ -743,6 +743,123 @@ body {
 }
 
 /* Accordion end */
+
+.article__footer {
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+
+.more-goods {
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.more-goods__block-heading {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+
+  letter-spacing: 0.01em;
+  color: var(--color-primary);
+}
+
+.more-goods__list {
+  list-style: none;
+  margin-top: 64px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 64px;
+}
+
+.more-goods__list-item {
+}
+
+.more-goods__link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.more-goods__image {
+  display: block;
+  width: 100%;
+  max-width: 248px;
+}
+
+.more-goods__heading {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.more-goods__colors-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.more-goods__color {
+  font-size: 0;
+  color: transparent;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  margin-right: 4px;
+}
+
+.more-goods__color:last-child {
+  margin-right: 0;
+}
+
+.more-goods__color--raw-sienna {
+  background-color: #c88252;
+}
+
+.more-goods__color--apricot {
+  background-color: #f8cab1;
+}
+
+.more-goods__color--mauvelous {
+  background-color: #e9a0a7;
+}
+
+.more-goods__color--bright-lavender {
+  background-color: #ba9be5;
+}
+
+.more-goods__sold {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  background-color: #fff;
+  color: var(--color-tertiary-1);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 3px 5px 4px 5px;
+}
+
+.more-goods__price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 8px;
+}
 
 /* main end */
 
