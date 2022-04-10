@@ -391,8 +391,11 @@
             <section class="product-accordion__block">
               <h2 class="product-accordion__heading">
                 <button
+                  id="product-accordion__title1"
                   class="product-accordion__button product-accordion__button--open"
                   type="button"
+                  aria-expanded="true"
+                  aria-controls="product-accordion__content1"
                 >
                   Sizing & Fit
                 </button>
@@ -401,14 +404,29 @@
                 </span>
               </h2>
 
-              <p class="product-accordion__text product-accordion__text--open">
-                Olga is 175cm, she is wearing a size S.
-              </p>
+              <div
+                id="product-accordion__content1"
+                class="product-accordion__content"
+                aria-hidden="false"
+                aria-labelledby="product-accordion__title1"
+              >
+                <p
+                  class="product-accordion__text product-accordion__text--open"
+                >
+                  Olga is 175cm, she is wearing a size S.
+                </p>
+              </div>
             </section>
 
             <section class="product-accordion__block">
               <h2 class="product-accordion__heading">
-                <button class="product-accordion__button" type="button">
+                <button
+                  id="product-accordion__title2"
+                  class="product-accordion__button"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="product-accordion__content2"
+                >
                   Composition & Care
                 </button>
                 <span class="product-accordion__button-icon-block">
@@ -416,14 +434,28 @@
                 </span>
               </h2>
 
-              <p class="product-accordion__text product-accordion__text--close">
-                Lorem ipsum dolor sit amet.
-              </p>
+              <div
+                id="product-accordion__content2"
+                class="product-accordion__content"
+                aria-hidden="true"
+                aria-labelledby="product-accordion__title2"
+              >
+                <p
+                  class="product-accordion__text product-accordion__text--close"
+                >
+                  Lorem ipsum dolor sit amet.
+                </p>
+              </div>
             </section>
 
             <section class="product-accordion__block">
               <h2 class="product-accordion__heading">
-                <button class="product-accordion__button" type="button">
+                <button
+                  class="product-accordion__button"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="product-accordion__content3"
+                >
                   Delivery & Returns
                 </button>
                 <span class="product-accordion__button-icon-block">
@@ -431,9 +463,18 @@
                 </span>
               </h2>
 
-              <p class="product-accordion__text product-accordion__text--close">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+              <div
+                id="product-accordion__content3"
+                class="product-accordion__content"
+                aria-hidden="true"
+                aria-labelledby="product-accordion__title3"
+              >
+                <p
+                  class="product-accordion__text product-accordion__text--close"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
             </section>
           </div>
           <!-- Accordion end -->
