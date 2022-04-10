@@ -811,6 +811,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 8px;
+  list-style: none;
 }
 
 .more-goods__color {
