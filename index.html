@@ -331,36 +331,59 @@
           </div>
         </div>
 
-        <!-- Accordion start -->
-        <div>
-          <section>
-            <h2>
-              <button type="button">Sizing & Fit</button>
-            </h2>
-            <div>
-              <p>Olga is 175cm, she is wearing a size S.</p>
-            </div>
-          </section>
+        <div class="product__main-block">
+          <!-- Accordion start -->
+          <div class="product__accordion product-accordion">
+            <section class="product-accordion__block">
+              <h2 class="product-accordion__heading">
+                <button
+                  class="product-accordion__button product-accordion__button--open"
+                  type="button"
+                >
+                  Sizing & Fit
+                </button>
+                <span class="product-accordion__button-icon-block">
+                  <span class="product-accordion__button-icon"></span>
+                </span>
+              </h2>
 
-          <section>
-            <h2>
-              <button type="button">Composition & Care</button>
-            </h2>
-            <div>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </section>
+              <p class="product-accordion__text product-accordion__text--open">
+                Olga is 175cm, she is wearing a size S.
+              </p>
+            </section>
 
-          <section>
-            <h2>
-              <button type="button">Delivery & Returns</button>
-            </h2>
-            <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </section>
+            <section class="product-accordion__block">
+              <h2 class="product-accordion__heading">
+                <button class="product-accordion__button" type="button">
+                  Composition & Care
+                </button>
+                <span class="product-accordion__button-icon-block">
+                  <span class="product-accordion__button-icon"></span>
+                </span>
+              </h2>
+
+              <p class="product-accordion__text product-accordion__text--close">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </section>
+
+            <section class="product-accordion__block">
+              <h2 class="product-accordion__heading">
+                <button class="product-accordion__button" type="button">
+                  Delivery & Returns
+                </button>
+                <span class="product-accordion__button-icon-block">
+                  <span class="product-accordion__button-icon"></span>
+                </span>
+              </h2>
+
+              <p class="product-accordion__text product-accordion__text--close">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </section>
+          </div>
+          <!-- Accordion end -->
         </div>
-        <!-- Accordion end -->
 
         <footer class="article__footer">
           <section>
