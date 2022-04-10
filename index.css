@@ -411,11 +411,27 @@ body {
   color: var(--color-tertiary-1);
 }
 
+.product__desctiption {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  margin: 22px 0;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .product__desctiption {
+    margin: 22px 22px 22px 0;
+  }
+}
+
 .product__form {
   margin: 48px 0 24px 0;
 }
 
 .product-form {
+  margin-bottom: 46px;
 }
 
 .product-form__fieldset {
