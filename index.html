@@ -99,7 +99,14 @@
                       id="xs"
                       value="xs"
                     />
-                    <label class="radio-block__label" for="xs">xs</label>
+                    <label
+                      id="size-xs"
+                      class="radio-block__label"
+                      for="xs"
+                      aria-labelledby="size size-xs"
+                    >
+                      xs
+                    </label>
                   </span>
 
                   <span class="radio-block__container">
@@ -111,7 +118,14 @@
                       value="s"
                       checked
                     />
-                    <label class="radio-block__label" for="s">s</label>
+                    <label
+                      id="size-s"
+                      class="radio-block__label"
+                      for="s"
+                      aria-labelledby="size size-s"
+                    >
+                      s
+                    </label>
                   </span>
 
                   <span class="radio-block__container">
@@ -122,7 +136,14 @@
                       id="m"
                       value="m"
                     />
-                    <label class="radio-block__label" for="m">m</label>
+                    <label
+                      id="size-m"
+                      class="radio-block__label"
+                      for="m"
+                      aria-labelledby="size size-m"
+                    >
+                      m
+                    </label>
                   </span>
 
                   <span class="radio-block__container">
@@ -133,7 +154,14 @@
                       id="l"
                       value="l"
                     />
-                    <label class="radio-block__label" for="l">l</label>
+                    <label
+                      id="size-l"
+                      class="radio-block__label"
+                      for="l"
+                      aria-labelledby="size size-l"
+                    >
+                      l
+                    </label>
                   </span>
 
                   <span class="radio-block__container">
@@ -144,7 +172,14 @@
                       id="xl"
                       value="xl"
                     />
-                    <label class="radio-block__label" for="xl">xl</label>
+                    <label
+                      id="size-xl"
+                      class="radio-block__label"
+                      for="xl"
+                      aria-labelledby="size size-xl"
+                    >
+                      xl
+                    </label>
                   </span>
 
                   <span class="radio-block__container">
@@ -156,7 +191,14 @@
                       value="2xl"
                       disabled
                     />
-                    <label class="radio-block__label" for="2xl">2xl</label>
+                    <label
+                      id="size-2xl"
+                      class="radio-block__label"
+                      for="2xl"
+                      aria-labelledby="size size-2xl"
+                    >
+                      2xl
+                    </label>
                   </span>
                 </div>
               </fieldset>
@@ -176,8 +218,10 @@
                       checked
                     />
                     <label
+                      id="color-white"
                       class="radio-block__label radio-block__label--color"
                       for="white"
+                      aria-labelledby="color color-white"
                       ><span
                         class="label__color-block label__color-block--white"
                       ></span>
@@ -194,8 +238,10 @@
                       value="black"
                     />
                     <label
+                      id="color-black"
                       class="radio-block__label radio-block__label--color"
                       for="black"
+                      aria-labelledby="color color-black"
                       ><span
                         class="label__color-block label__color-block--black"
                       ></span>
@@ -212,8 +258,10 @@
                       value="dark-gray"
                     />
                     <label
+                      id="color-dark-gray"
                       class="radio-block__label radio-block__label--color"
                       for="dark-gray"
+                      aria-labelledby="color color-dark-gray"
                       ><span
                         class="label__color-block label__color-block--dark-gray"
                       ></span>
@@ -230,8 +278,10 @@
                       value="purple-latte"
                     />
                     <label
+                      id="color-purple-latte"
                       class="radio-block__label radio-block__label--color"
                       for="purple-latte"
+                      aria-labelledby="color color-purple-latte"
                     >
                       <span
                         class="label__color-block label__color-block--purple-latte"
@@ -250,8 +300,10 @@
                       disabled
                     />
                     <label
+                      id="color-mauvelous"
                       class="radio-block__label radio-block__label--color"
                       for="mauvelous"
+                      aria-labelledby="color color-mauvelous"
                       ><span
                         class="label__color-block label__color-block--mauvelous"
                       ></span>
@@ -269,8 +321,10 @@
                       disabled
                     />
                     <label
+                      id="color-apricot"
                       class="radio-block__label radio-block__label--color"
                       for="apricot"
+                      aria-labelledby="color color-apricot"
                     >
                       <span
                         class="label__color-block label__color-block--apricot"
@@ -596,6 +650,10 @@
         <span class="footer__copyright">© Susparsa 2021</span>
       </div>
     </footer>
+    <div class="visually-hidden">
+      <div id="size">size</div>
+      <div id="color">color</div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
