@@ -616,6 +616,12 @@ body {
   background-color: transparent;
   border: none;
   cursor: inherit;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .product-accordion__button-icon-block {
@@ -646,7 +652,7 @@ body {
 }
 
 .product-accordion__button--open
-  ~ .product-accordion__button-icon-block
+  > .product-accordion__button-icon-block
   > .product-accordion__button-icon::after {
   transform: rotate(90deg);
 }

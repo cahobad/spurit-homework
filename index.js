@@ -112,8 +112,6 @@ const accordionTexts = document.querySelectorAll('.product-accordion__text');
 
 accordionButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    console.log(index);
-
     if (button.classList.contains('product-accordion__button--open')) {
       // accordion's block is open
       // need to close
