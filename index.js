@@ -101,3 +101,40 @@ productColors.forEach(color => {
 
 
 /* Product end */
+
+
+
+/* Accordion start */
+
+const accordionButtons = document.querySelectorAll('.product-accordion__button');
+const accordionContents = document.querySelectorAll('.product-accordion__content');
+const accordionTexts = document.querySelectorAll('.product-accordion__text');
+
+accordionButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    console.log(index);
+
+    if (button.classList.contains('product-accordion__button--open')) {
+      // accordion's block is open
+      // need to close
+
+      button.classList.remove('product-accordion__button--open');
+      button.setAttribute('aria-expanded', false);
+      accordionContents[index].setAttribute('aria-hidden', true);
+      accordionTexts[index].classList.remove('product-accordion__text--open');
+      accordionTexts[index].classList.add('product-accordion__text--close');
+      
+    } else {
+      // accordion's block is close
+      // need to open
+      button.classList.add('product-accordion__button--open');
+      button.setAttribute('aria-expanded', true);
+      accordionContents[index].setAttribute('aria-hidden', false);
+      accordionTexts[index].classList.remove('product-accordion__text--close');
+      accordionTexts[index].classList.add('product-accordion__text--open');
+      
+    }
+  })
+})
+
+/* Accordion end */
