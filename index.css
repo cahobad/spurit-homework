@@ -607,7 +607,11 @@ body {
 }
 
 .product-accordion__button {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   font: inherit;
   font-weight: inherit;
   font-size: inherit;
@@ -616,12 +620,6 @@ body {
   background-color: transparent;
   border: none;
   cursor: inherit;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
 
 .product-accordion__button-icon-block {
