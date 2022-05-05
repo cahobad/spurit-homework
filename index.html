@@ -50,7 +50,7 @@
               <a class="header-menu__link" href="/">Search</a>
             </li>
             <li class="header-menu__list-item">
-              <a class="header-menu__link" href="/">Cart (0)</a>
+              <a class="header-menu__link" href="/">Cart (<span id="product-amount-cart">0</span>)</a>
             </li>
           </ul>
         </nav>
@@ -83,12 +83,12 @@
           </div>
 
           <div class="product__info-block">
-            <h1 class="product__heading">White unisex t-shirt</h1>
-            <p class="product__price">CHF 40</p>
+            <h1 id="product-name" class="product__heading">White unisex t-shirt</h1>
+            <p id="product-price" class="product__price">CHF 40</p>
             <p class="product__tax">Tax included</p>
 
             <!-- Form start -->
-            <form class="product__form product-form">
+            <form id="product-form" class="product__form product-form">
               <fieldset class="product-form__fieldset">
                 <legend class="product-form__legend">Size</legend>
                 <div class="product-form__radio-block">
@@ -205,8 +205,8 @@
               </fieldset>
 
               <fieldset class="product-form__fieldset">
-                <legend class="product-form__legend">
-                  Color <span aria-hidden="true">- White</span>
+                <legend class="product-form__legend product-form__current-color">
+                  Color <span aria-hidden="true">- <span id="product-current-color" class="legend__current-color">white</span></span>
                 </legend>
                 <div class="product-form__radio-block">
                   <span class="radio-block__container">
@@ -343,12 +343,14 @@
 
                 <div class="product-form__number-input-block">
                   <button
+                    id="product-decrease-amount"
                     class="product-form__button product-form__button--small"
                     type="button"
                   >
                     −
                   </button>
                   <input
+                    id="product-quantity"
                     class="product-form__number-input"
                     type="number"
                     name="quantity"
@@ -356,6 +358,7 @@
                     value="1"
                   />
                   <button
+                    id="product-increase-amount"
                     class="product-form__button product-form__button--small"
                     type="button"
                   >
@@ -365,10 +368,10 @@
               </fieldset>
 
               <div class="product-form__order-button-block">
-                <button class="product-form__button" type="button">
+                <button id="product-form-add-to-cart" class="product-form__button" type="button">
                   add to cart
                 </button>
-                <button
+                <button id="product-form-submit"
                   class="product-form__button product-form__button--submit"
                   type="submit"
                 >

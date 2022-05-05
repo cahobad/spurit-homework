@@ -441,6 +441,10 @@ body {
   content: '';
 }
 
+.legend__current-color {
+  text-transform: capitalize;
+}
+
 .radio-block__label--color {
   color: transparent;
   font-size: 0;
