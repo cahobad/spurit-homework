@@ -9,20 +9,20 @@
   </head>
   <body>
     <header class="header">
-      <a class="skiplink" href="#main">Go to content</a>
-      <div class="header__block">
-        <nav class="header__menu header-menu" aria-label="main menu">
+      <a class="skip-link" href="#main">Go to content</a>
+      <div class="header__container">
+        <nav class="header__menu header-menu" aria-label="main">
           <ul class="header-menu__list" role="list">
-            <li class="header-menu__list-item">
+            <li class="header-menu__item">
               <a class="header-menu__link" href="/">Women </a>
             </li>
-            <li class="header-menu__list-item">
+            <li class="header-menu__item">
               <a class="header-menu__link" href="/">Men</a>
             </li>
-            <li class="header-menu__list-item">
+            <li class="header-menu__item">
               <a class="header-menu__link" href="/">Kids</a>
             </li>
-            <li class="header-menu__list-item">
+            <li class="header-menu__item">
               <a class="header-menu__link" href="/">Company</a>
             </li>
           </ul>
@@ -40,16 +40,16 @@
 
         <nav
           class="header__menu header__menu--user-nav header-menu"
-          aria-label="user menu"
+          aria-label="user"
         >
           <ul class="header-menu__list" role="list">
-            <li class="header-menu__list-item">
+            <li class="header-menu__item">
               <a class="header-menu__link" href="/">Account</a>
             </li>
-            <li class="header-menu__list-item">
+            <li class="header-menu__item">
               <a class="header-menu__link" href="/">Search</a>
             </li>
-            <li class="header-menu__list-item">
+            <li class="header-menu__item">
               <a class="header-menu__link" href="/">Cart (<span id="product-amount-cart">0</span>)</a>
             </li>
           </ul>
@@ -60,20 +60,20 @@
     <aside class="aside">
       <nav class="breadcrumbs" aria-label="breadcrumbs">
         <ol class="breadcrumbs__list" role="list">
-          <li class="breadcrumbs__list-item">
+          <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="/">Home</a>
           </li>
-          <li class="breadcrumbs__list-item">
+          <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="/">Women</a>
           </li>
-          <li class="breadcrumbs__list-item">White unisex t-shirt</li>
+          <li class="breadcrumbs__item">White unisex t-shirt</li>
         </ol>
       </nav>
     </aside>
 
     <main id="main" class="main">
       <article class="product">
-        <div class="product__block">
+        <div class="product__container">
           <div class="product__gallery">
             <img
               class="product__image"
@@ -82,7 +82,7 @@
             />
           </div>
 
-          <div class="product__info-block">
+          <div class="product__info">
             <h1 id="product-name" class="product__heading">White unisex t-shirt</h1>
             <p id="product-price" class="product__price">CHF 40</p>
             <p class="product__tax">Tax included</p>
@@ -91,10 +91,10 @@
             <form id="product-form" class="product__form product-form">
               <fieldset class="product-form__fieldset">
                 <legend class="product-form__legend">Size</legend>
-                <div class="product-form__radio-block">
-                  <span class="radio-block__container">
+                <div class="product-form__radio">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="size"
                       id="xs"
@@ -102,7 +102,7 @@
                     />
                     <label
                       id="size-xs"
-                      class="radio-block__label"
+                      class="radio__label"
                       for="xs"
                       aria-labelledby="size size-xs"
                     >
@@ -110,9 +110,9 @@
                     </label>
                   </span>
 
-                  <span class="radio-block__container">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="size"
                       id="s"
@@ -121,7 +121,7 @@
                     />
                     <label
                       id="size-s"
-                      class="radio-block__label"
+                      class="radio__label"
                       for="s"
                       aria-labelledby="size size-s"
                     >
@@ -129,9 +129,9 @@
                     </label>
                   </span>
 
-                  <span class="radio-block__container">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="size"
                       id="m"
@@ -139,7 +139,7 @@
                     />
                     <label
                       id="size-m"
-                      class="radio-block__label"
+                      class="radio__label"
                       for="m"
                       aria-labelledby="size size-m"
                     >
@@ -147,9 +147,9 @@
                     </label>
                   </span>
 
-                  <span class="radio-block__container">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="size"
                       id="l"
@@ -157,7 +157,7 @@
                     />
                     <label
                       id="size-l"
-                      class="radio-block__label"
+                      class="radio__label"
                       for="l"
                       aria-labelledby="size size-l"
                     >
@@ -165,9 +165,9 @@
                     </label>
                   </span>
 
-                  <span class="radio-block__container">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="size"
                       id="xl"
@@ -175,7 +175,7 @@
                     />
                     <label
                       id="size-xl"
-                      class="radio-block__label"
+                      class="radio__label"
                       for="xl"
                       aria-labelledby="size size-xl"
                     >
@@ -183,9 +183,9 @@
                     </label>
                   </span>
 
-                  <span class="radio-block__container">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="size"
                       id="2xl"
@@ -194,7 +194,7 @@
                     />
                     <label
                       id="size-2xl"
-                      class="radio-block__label"
+                      class="radio__label"
                       for="2xl"
                       aria-labelledby="size size-2xl"
                     >
@@ -208,10 +208,10 @@
                 <legend class="product-form__legend product-form__current-color">
                   Color <span aria-hidden="true">- <span id="product-current-color" class="legend__current-color">white</span></span>
                 </legend>
-                <div class="product-form__radio-block">
-                  <span class="radio-block__container">
+                <div class="product-form__radio">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="color"
                       id="white"
@@ -220,19 +220,19 @@
                     />
                     <label
                       id="color-white"
-                      class="radio-block__label radio-block__label--color"
+                      class="radio__label radio__label--color"
                       for="white"
                       aria-labelledby="color color-white"
                       ><span
-                        class="label__color-block label__color-block--white"
+                        class="label__color label__color--white"
                       ></span>
                       <span class="label__title">white</span></label
                     >
                   </span>
 
-                  <span class="radio-block__container">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="color"
                       id="black"
@@ -240,19 +240,19 @@
                     />
                     <label
                       id="color-black"
-                      class="radio-block__label radio-block__label--color"
+                      class="radio__label radio__label--color"
                       for="black"
                       aria-labelledby="color color-black"
                       ><span
-                        class="label__color-block label__color-block--black"
+                        class="label__color label__color--black"
                       ></span>
                       <span class="label__title">black</span></label
                     >
                   </span>
 
-                  <span class="radio-block__container">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="color"
                       id="dark-gray"
@@ -260,19 +260,19 @@
                     />
                     <label
                       id="color-dark-gray"
-                      class="radio-block__label radio-block__label--color"
+                      class="radio__label radio__label--color"
                       for="dark-gray"
                       aria-labelledby="color color-dark-gray"
                       ><span
-                        class="label__color-block label__color-block--dark-gray"
+                        class="label__color label__color--dark-gray"
                       ></span>
                       <span class="label__title">dark gray</span></label
                     >
                   </span>
 
-                  <span class="radio-block__container">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="color"
                       id="purple-latte"
@@ -280,20 +280,20 @@
                     />
                     <label
                       id="color-purple-latte"
-                      class="radio-block__label radio-block__label--color"
+                      class="radio__label radio__label--color"
                       for="purple-latte"
                       aria-labelledby="color color-purple-latte"
                     >
                       <span
-                        class="label__color-block label__color-block--purple-latte"
+                        class="label__color label__color--purple-latte"
                       ></span>
                       <span class="label__title">purple latte</span>
                     </label>
                   </span>
 
-                  <span class="radio-block__container">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="color"
                       id="mauvelous"
@@ -302,19 +302,19 @@
                     />
                     <label
                       id="color-mauvelous"
-                      class="radio-block__label radio-block__label--color"
+                      class="radio__label radio__label--color"
                       for="mauvelous"
                       aria-labelledby="color color-mauvelous"
                       ><span
-                        class="label__color-block label__color-block--mauvelous"
+                        class="label__color label__color--mauvelous"
                       ></span>
                       <span class="label__title">mauvelous</span></label
                     >
                   </span>
 
-                  <span class="radio-block__container">
+                  <span class="radio__container">
                     <input
-                      class="radio-block__input"
+                      class="radio__input"
                       type="radio"
                       name="color"
                       id="apricot"
@@ -323,12 +323,12 @@
                     />
                     <label
                       id="color-apricot"
-                      class="radio-block__label radio-block__label--color"
+                      class="radio__label radio__label--color"
                       for="apricot"
                       aria-labelledby="color color-apricot"
                     >
                       <span
-                        class="label__color-block label__color-block--apricot"
+                        class="label__color label__color--apricot"
                       ></span>
                       <span class="label__title">apricot</span>
                     </label>
@@ -341,7 +341,7 @@
                   Quantity
                 </legend>
 
-                <div class="product-form__number-input-block">
+                <div class="product-form__number-input-container">
                   <button
                     id="product-decrease-amount"
                     class="product-form__button product-form__button--small"
@@ -367,7 +367,7 @@
                 </div>
               </fieldset>
 
-              <div class="product-form__order-button-block">
+              <div class="product-form__order-button">
                 <button id="product-form-add-to-cart" class="product-form__button" type="button">
                   add to cart
                 </button>
@@ -389,10 +389,10 @@
           </div>
         </div>
 
-        <div class="product__block">
+        <div class="product__container">
           <!-- Accordion start -->
           <div class="product__accordion product-accordion">
-            <section class="product-accordion__block">
+            <section class="product-accordion__container">
               <h2 class="product-accordion__heading">
                 <button
                   id="product-accordion__title1"
@@ -402,7 +402,7 @@
                   aria-controls="product-accordion__content1"
                 >
                   Sizing & Fit
-                  <span class="product-accordion__button-icon-block">
+                  <span class="product-accordion__button-icon-container">
                     <span class="product-accordion__button-icon"></span>
                   </span>
                 </button>
@@ -423,7 +423,7 @@
               </div>
             </section>
 
-            <section class="product-accordion__block">
+            <section class="product-accordion__container">
               <h2 class="product-accordion__heading">
                 <button
                   id="product-accordion__title2"
@@ -433,7 +433,7 @@
                   aria-controls="product-accordion__content2"
                 >
                   Composition & Care
-                  <span class="product-accordion__button-icon-block">
+                  <span class="product-accordion__button-icon-container">
                     <span class="product-accordion__button-icon"></span>
                   </span>
                 </button>
@@ -454,7 +454,7 @@
               </div>
             </section>
 
-            <section class="product-accordion__block">
+            <section class="product-accordion__container">
               <h2 class="product-accordion__heading">
                 <button
                   id="product-accordion__title3"
@@ -464,7 +464,7 @@
                   aria-controls="product-accordion__content3"
                 >
                   Delivery & Returns
-                  <span class="product-accordion__button-icon-block">
+                  <span class="product-accordion__button-icon-container">
                     <span class="product-accordion__button-icon"></span>
                   </span>
                 </button>
@@ -490,9 +490,9 @@
 
         <footer class="article__footer">
           <section class="more-goods">
-            <h3 class="more-goods__block-heading">You may also like</h3>
+            <h3 class="more-goods__heading">You may also like</h3>
             <ul class="more-goods__list" role="list">
-              <li class="more-goods__list-item">
+              <li class="more-goods__item">
                 <a class="more-goods__link" href="/">
                   <img
                     class="more-goods__image"
@@ -502,7 +502,7 @@
                   <h4 class="more-goods__heading">Product name</h4>
                   <ul
                     aria-labelledby="available-colors"
-                    class="more-goods__colors-block"
+                    class="more-goods__colors-list"
                     role="list"
                   >
                     <li class="more-goods__color more-goods__color--raw-sienna">
@@ -526,7 +526,7 @@
                 </a>
               </li>
 
-              <li class="more-goods__list-item">
+              <li class="more-goods__item">
                 <a class="more-goods__link" href="/">
                   <img
                     class="more-goods__image"
@@ -536,7 +536,7 @@
                   <h4 class="more-goods__heading">Product name</h4>
                   <ul
                     aria-labelledby="available-colors"
-                    class="more-goods__colors-block"
+                    class="more-goods__colors-list"
                     role="list"
                   >
                     <li class="more-goods__color more-goods__color--raw-sienna">
@@ -560,7 +560,7 @@
                 </a>
               </li>
 
-              <li class="more-goods__list-item">
+              <li class="more-goods__item">
                 <a class="more-goods__link" href="/">
                   <img
                     class="more-goods__image"
@@ -570,7 +570,7 @@
                   <h4 class="more-goods__heading">Product name</h4>
                   <ul
                     aria-labelledby="available-colors"
-                    class="more-goods__colors-block"
+                    class="more-goods__colors-list"
                     role="list"
                   >
                     <li class="more-goods__color more-goods__color--raw-sienna">
@@ -595,7 +595,7 @@
                 </a>
               </li>
 
-              <li class="more-goods__list-item">
+              <li class="more-goods__item">
                 <a class="more-goods__link" href="/">
                   <img
                     class="more-goods__image"
@@ -605,7 +605,7 @@
                   <h4 class="more-goods__heading">Product name</h4>
                   <ul
                     aria-labelledby="available-colors"
-                    class="more-goods__colors-block"
+                    class="more-goods__colors-list"
                     role="list"
                   >
                     <li class="more-goods__color more-goods__color--raw-sienna">
@@ -635,35 +635,35 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__block">
-        <div class="footer-block">
-          <h3 class="footer-block__heading">About</h3>
+      <div class="footer__container">
+        <div class="footer-container">
+          <h3 class="footer-container__heading">About</h3>
 
-          <p class="footer-block__text">
+          <p class="footer-container__text">
             Susparsa Store
             <br />
             Geneva, Switzerland
           </p>
 
           <a
-            class="footer-block__link footer-block__link--icon"
+            class="footer-container__link footer-container__link--icon"
             href="/"
             target="_blank"
           >
             <img
-              class="footer-block__social-icon"
+              class="footer-container__social-icon"
               src="images/facebook.svg"
               alt=""
             />
             <span class="visually-hidden">open facebook in new tab</span>
           </a>
           <a
-            class="footer-block__link footer-block__link--icon"
+            class="footer-container__link footer-container__link--icon"
             href="/"
             target="_blank"
           >
             <img
-              class="footer-block__social-icon"
+              class="footer-container__social-icon"
               src="images/instagram.svg"
               alt=""
             />
@@ -671,49 +671,49 @@
           </a>
         </div>
 
-        <div class="footer-block">
-          <h3 class="footer-block__heading">Company</h3>
-          <ul class="footer-block__links-list" role="list">
-            <li class="footer-block__links-list-item">
-              <a class="footer-block__link" href="/">Women</a>
+        <div class="footer-container">
+          <h3 class="footer-container__heading">Company</h3>
+          <ul class="footer-container__links-list" role="list">
+            <li class="footer-container__links-item">
+              <a class="footer-container__link" href="/">Women</a>
             </li>
-            <li class="footer-block__links-list-item">
-              <a class="footer-block__link" href="/">Men</a>
+            <li class="footer-container__links-item">
+              <a class="footer-container__link" href="/">Men</a>
             </li>
-            <li class="footer-block__links-list-item">
-              <a class="footer-block__link" href="/">Kids</a>
+            <li class="footer-container__links-item">
+              <a class="footer-container__link" href="/">Kids</a>
             </li>
-            <li class="footer-block__links-list-item">
-              <a class="footer-block__link" href="/">About Us</a>
+            <li class="footer-container__links-item">
+              <a class="footer-container__link" href="/">About Us</a>
             </li>
-            <li class="footer-block__links-list-item">
-              <a class="footer-block__link" href="/">Our Materials</a>
+            <li class="footer-container__links-item">
+              <a class="footer-container__link" href="/">Our Materials</a>
             </li>
           </ul>
         </div>
 
-        <div class="footer-block">
-          <h3 class="footer-block__heading">Useful Links</h3>
-          <ul class="footer-block__links-list" role="list">
-            <li class="footer-block__links-list-item">
-              <a class="footer-block__link" href="/">Privacy Policy </a>
+        <div class="footer-container">
+          <h3 class="footer-container__heading">Useful Links</h3>
+          <ul class="footer-container__links-list" role="list">
+            <li class="footer-container__links-item">
+              <a class="footer-container__link" href="/">Privacy Policy </a>
             </li>
-            <li class="footer-block__links-list-item">
-              <a class="footer-block__link" href="/">Shipping Policy</a>
+            <li class="footer-container__links-item">
+              <a class="footer-container__link" href="/">Shipping Policy</a>
             </li>
-            <li class="footer-block__links-list-item">
-              <a class="footer-block__link" href="/">Return & Refund Policy</a>
+            <li class="footer-container__links-item">
+              <a class="footer-container__link" href="/">Return & Refund Policy</a>
             </li>
-            <li class="footer-block__links-list-item">
-              <a class="footer-block__link" href="/">Terms of Service</a>
+            <li class="footer-container__links-item">
+              <a class="footer-container__link" href="/">Terms of Service</a>
             </li>
-            <li class="footer-block__links-list-item">
-              <a class="footer-block__link" href="/"> Contact Us</a>
+            <li class="footer-container__links-item">
+              <a class="footer-container__link" href="/"> Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="footer__copyright-block">
+      <div class="footer__copyright-container">
         <span class="footer__copyright">© Susparsa 2021</span>
       </div>
     </footer>
