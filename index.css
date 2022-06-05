@@ -421,7 +421,7 @@ body {
 }
 
 .radio__input:checked ~ .radio__label {
-  border: 1px solid var(--color-black);
+  border: 2px solid var(--color-black);
 }
 
 .radio__input:disabled ~ .radio__label {
