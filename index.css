@@ -256,6 +256,10 @@ body {
   text-decoration: none;
 }
 
+.breadcrumbs__link--current-page {
+  color: var(--color-disabled-2);
+}
+
 /* header end */
 
 /* main start */
