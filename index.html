@@ -494,7 +494,7 @@
 
         <footer class="article__footer">
           <section class="more-goods">
-            <h3 class="more-goods__heading">You may also like</h3>
+            <h2 class="more-goods__heading">You may also like</h2>
             <ul class="more-goods__list" role="list">
               <li class="more-goods__item">
                 <a class="more-goods__link" href="/">
@@ -640,13 +640,15 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer-container">
-          <h3 class="footer-container__heading">About</h3>
+        <section class="footer-container">
+          <h2 class="footer-container__heading">About</h2>
 
-          <p class="footer-container__text">
-            Susparsa Store
-            <br />
-            Geneva, Switzerland
+          <p>
+            <address class="footer-container__text">
+              Susparsa Store
+              <br />
+              Geneva, Switzerland
+            </address>
           </p>
 
           <ul class="footer__social-links">
@@ -679,10 +681,10 @@
             </a>
             </li>
           </ul>
-        </div>
+        </section>
 
-        <div class="footer-container">
-          <h3 class="footer-container__heading">Company</h3>
+        <section class="footer-container">
+          <h2 class="footer-container__heading">Company</h2>
           <nav class="footer-navigation" aria-label="company">
             <ul class="footer-navigation__links-list" role="list">
               <li class="footer-navigation__links-item">
@@ -703,10 +705,10 @@
             </ul>
           </nav>
           
-        </div>
+        </section>
 
-        <div class="footer-container">
-          <h3 class="footer-container__heading">Useful Links</h3>
+        <section class="footer-container">
+          <h2 class="footer-container__heading">Useful Links</h2>
           <nav class="footer-navigation" aria-label="useful">
             <ul class="footer-navigation__links-list" role="list">
               <li class="footer-navigation__links-item">
@@ -727,13 +729,13 @@
             </ul>
           </nav>
           
-        </div>
+        </section>
       </div>
       <div class="footer__copyright-container">
-        <span class="footer__copyright">© Susparsa 2021</span>
+        <span><small class="footer__copyright">© Susparsa 2021</small></span>
       </div>
     </footer>
-    <div class="visually-hidden">
+    <div class="visually-hidden" aria-hidden="true">
       <div id="size">size</div>
       <div id="color">color</div>
       <div id="available-colors">available colors</div>
