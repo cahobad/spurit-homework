@@ -136,3 +136,64 @@ accordionButtons.forEach((button, index) => {
 })
 
 /* Accordion end */
+
+
+/* test start */
+const menu = document.querySelector('.header__menu');
+const menuLinks = document.querySelectorAll('.test .header-menu__link');
+console.log(menuLinks.length);
+
+menuLinks.forEach(link => {
+  link.addEventListener('focus', () => {
+    console.log('focus in menu link');
+    link.setAttribute('tabindex', '0');
+  })
+});
+
+
+menu.onkeydown = function (event) {
+  switch (event.code) {
+    case 'ArrowRight':
+      console.log('➡️');
+            
+      for (let i = 0; i < menuLinks.length; i++) {
+        console.log('проверяем', menuLinks[i].textContent);
+        if (menuLinks[i].getAttribute('tabindex') !== '-1') {
+          console.log('нашли', i);
+          if (menuLinks[i + 1]) {
+            menuLinks[i].setAttribute('tabindex', '-1');
+            menuLinks[i + 1].setAttribute('tabindex', '0');
+            menuLinks[i + 1].focus();
+          }
+          break;
+        }
+        
+      }
+      break;
+
+    case 'ArrowLeft':
+      console.log('⬅️');
+
+      for (let i = 0; i < menuLinks.length; i++) {
+        if (menuLinks[i].getAttribute('tabindex') !== '-1') {
+          console.log('нашли', i);
+          if (menuLinks[i - 1]) {
+            menuLinks[i].setAttribute('tabindex', '-1');
+            menuLinks[i - 1].setAttribute('tabindex', '0');
+            menuLinks[i - 1].focus();
+          }
+          break;
+        }
+        
+      }
+      
+      break;
+  
+    default:
+      break;
+  }
+  
+}
+
+
+/* test end */
