@@ -31,10 +31,10 @@
 :root {
   --color-black: #1a1f29;
   --color-white: #fff;
-  --color-disabled-1: #ccc;
-  --color-disabled-2: #929499;
+  --color-disabled-1: #646464;
+  --color-disabled-2: #4f5157;
   --color-primary: #171c8f;
-  --color-tertiary-1: #5e626b;
+  --color-tertiary-1: #3d4044;
   --mobile-size: 241px;
   --tablet-size: 480px;
   --laptop-size: 768px;
@@ -425,7 +425,7 @@ body {
 }
 
 .radio__input:disabled ~ .radio__label {
-  color: #bdbdbd;
+  color: var(--color-black);
   background: #f2f2f2;
   border: none;
   cursor: default;
