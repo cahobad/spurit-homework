@@ -138,41 +138,53 @@ accordionButtons.forEach((button, index) => {
 /* Accordion end */
 
 
-/* test start */
-const menu = document.querySelector('.header__menu');
-const menuLinks = document.querySelectorAll('.test .header-menu__link');
-console.log(menuLinks.length);
+/* navigation start */
 
-menu.onkeydown = function (event) {
-  // press ➡️
-  if (event.code === 'ArrowRight') {
-    for (let i = 0; i < menuLinks.length; i++) {
-      if (menuLinks[i].getAttribute('tabindex') !== '-1') {
-        if (menuLinks[i + 1]) {
-          menuLinks[i].setAttribute('tabindex', '-1');
-          menuLinks[i + 1].setAttribute('tabindex', '0');
-          menuLinks[i + 1].focus();
+const navigations = document.querySelectorAll('nav');
+
+const links = [];
+
+navigations.forEach((nav, index) => {
+  const menuLinks = nav.querySelectorAll('a');
+  menuLinks.forEach((link, index) => {
+    if (index === 0) {
+      link.setAttribute('tabindex', '0');
+    } else {
+      link.setAttribute('tabindex', '-1');
+    }
+  });
+  links.push(menuLinks);
+
+
+  nav.onkeydown = function (event) {
+    // press ➡️
+    if (event.code === 'ArrowRight') {
+      for (let i = 0; i < links[index].length; i++) {
+        if (links[index][i].getAttribute('tabindex') !== '-1') {
+          if (links[index][i + 1]) {
+            links[index][i].setAttribute('tabindex', '-1');
+            links[index][i + 1].setAttribute('tabindex', '0');
+            links[index][i + 1].focus();
+          }
+          break;
         }
-        break;
+      }
+    }
+  
+    // press ⬅️
+    if (event.code === 'ArrowLeft') {
+      for (let i = 0; i < links[index].length; i++) {
+        if (links[index][i].getAttribute('tabindex') !== '-1') {
+          if (links[index][i - 1]) {
+            links[index][i].setAttribute('tabindex', '-1');
+            links[index][i - 1].setAttribute('tabindex', '0');
+            links[index][i - 1].focus();
+          }
+          break;
+        }
       }
     }
   }
+});
 
-  // press ⬅️
-  if (event.code === 'ArrowLeft') {
-    for (let i = 0; i < menuLinks.length; i++) {
-      if (menuLinks[i].getAttribute('tabindex') !== '-1') {
-        if (menuLinks[i - 1]) {
-          menuLinks[i].setAttribute('tabindex', '-1');
-          menuLinks[i - 1].setAttribute('tabindex', '0');
-          menuLinks[i - 1].focus();
-        }
-        break;
-      }
-    }
-  }
-
-}
-
-
-/* test end */
+/* navigation end */
