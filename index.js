@@ -147,13 +147,7 @@ const links = [];
 navigations.forEach((nav, index) => {
   const menuLinks = nav.querySelectorAll('a');
   menuLinks.forEach((link, index) => {
-    link.onfocus = function() {
-      console.log('need help');
-      link.setAttribute('tabindex', '0');
-      link.focus();
-    };
-
-    if (index === 0) {
+        if (index === 0) {
       link.setAttribute('tabindex', '0');
     } else {
       link.setAttribute('tabindex', '-1');
@@ -163,8 +157,8 @@ navigations.forEach((nav, index) => {
 
 
   nav.onkeydown = function (event) {
-    // press ➡️
-    if (event.code === 'ArrowRight') {
+    // press ➡️ or ⬇️
+    if (event.code === 'ArrowRight' || event.code === 'ArrowDown') {
       for (let i = 0; i < links[index].length; i++) {
         if (links[index][i].getAttribute('tabindex') !== '-1') {
           if (links[index][i + 1]) {
@@ -177,8 +171,8 @@ navigations.forEach((nav, index) => {
       }
     }
   
-    // press ⬅️
-    if (event.code === 'ArrowLeft') {
+    // press ⬅️ or ⬆️
+    if (event.code === 'ArrowLeft' || event.code === 'ArrowUp') {
       for (let i = 0; i < links[index].length; i++) {
         if (links[index][i].getAttribute('tabindex') !== '-1') {
           if (links[index][i - 1]) {
