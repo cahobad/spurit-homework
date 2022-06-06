@@ -147,6 +147,12 @@ const links = [];
 navigations.forEach((nav, index) => {
   const menuLinks = nav.querySelectorAll('a');
   menuLinks.forEach((link, index) => {
+    link.onfocus = function() {
+      console.log('need help');
+      link.setAttribute('tabindex', '0');
+      link.focus();
+    };
+
     if (index === 0) {
       link.setAttribute('tabindex', '0');
     } else {
