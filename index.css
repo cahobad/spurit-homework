@@ -691,7 +691,8 @@ body {
 .more-goods {
   width: 100%;
   max-width: 1184px;
-  margin: 0 auto;
+  margin: 3rem auto;
+
 }
 
 .more-goods__heading {
